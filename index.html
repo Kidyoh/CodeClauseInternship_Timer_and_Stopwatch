@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Timer and Stopwatch</title>
+</head>
+<body>
+    <div class="container">
+        <button id="switchButton" onclick="switchCard()">Switch to Stopwatch</button>
+    
+        <div id="timerCard" class="card">
+            <h2>Timer</h2>
+            <input type="text" id="hoursInput" placeholder="Enter hours" value="0">
+            <label for="hoursInput">Hours</label>
+            <input type="text" id="minutesInput" placeholder="Enter minutes" value="0">
+            <label for="minutesInput">Minutes</label>
+            <input type="text" id="secondsInput" placeholder="Enter seconds" value="0">
+            <label for="secondsInput">Seconds</label>
+            <span id="timerDisplay">00:00:00</span>
+            <button onclick="startTimer()">Start</button>
+            <button onclick="stopTimer()">Stop</button>
+        </div>
+    
+        <div id="stopwatchCard" class="card" style="display: none;">
+            <h2>Stopwatch</h2>
+            <span id="stopwatchDisplay">00:00:00</span>
+            <button onclick="startStopwatch()">Start</button>
+            <button onclick="stopStopwatch()">Stop</button>
+            <button onclick="resetStopwatch()">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
